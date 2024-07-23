@@ -1,0 +1,292 @@
+/*Fontes*/
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+BE+WAL:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+/*Dispostivos Médios (Tablets deitados, 768px para cima) */
+/* Infelizmente não tive tempo de fazer a responsividade */
+@media only screen and (max-width: 968px) {
+    .banner1{
+        display: none;
+    }
+    section{
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0%;
+    }
+    .card{
+        margin-top: 20px;
+        max-width: 95%;
+    }
+    .fonte1{
+        font-size: 14px;
+    }
+    h2{
+        font-size: 20px;
+    }
+}
+/*Animação de vibrar*/
+@keyframes shake{
+    0% { transform: translateX(0); }
+    10%, 90% { transform: translateX(-5px); }
+    20%, 80% { transform: translateX(5px); }
+    30%, 50%, 70% { transform: translateX(-5px); }
+    40%, 60% { transform: translateX(5px); }
+    100% { transform: translateX(0); }
+}
+.vibrar{
+    display: inline-block;
+}
+.vibrar:hover {
+    animation: shake 0.8s ease-in-out;
+}
+/*Efeitos gerais*/
+.flex-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.logo{
+    width: 100%;
+    height: 170px;
+}
+.logo:hover{
+    width: 110%;
+    height: 190px;
+}
+.log{
+    display: flex;
+    align-items: center;
+    flex: 18%;
+}
+.navlist:hover, .dropbtn:hover{
+    text-decoration: underline;
+    background-color: lightgray;
+}
+.dropdown:hover{
+    color: black;
+}
+.dropdown:hover .navlist{
+    background-color: white;
+    color: black;
+}
+.dropdown-content{
+    position: absolute;
+    display: none;
+    background-color: rgb(234, 234, 234);
+    flex-direction: column;
+    border: solid 3px black;
+    border-bottom: none;
+    border-radius: 10px;
+}
+.dropdown:hover .dropdown-content{
+    display: flex;
+}
+.dropdown{
+    display: block;
+    position: relative;
+}
+.dropdown-content a{
+    color: black;
+    text-decoration: none;
+    display: block;
+    padding-left: 45px;
+    padding-right: 45px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-family: "Playwrite BE WAL", cursive;
+    border-bottom: solid 3px black;
+}
+.dropdown-content a:hover{
+    background-color: rgb(93, 75, 75);
+    color: white;
+}
+.dif{
+    border-bottom-right-radius:5px;
+    border-bottom-left-radius:5px;
+    border-bottom: solid 10px rgb(108, 98, 83);
+}
+.bannerdiv{
+    width: 100%;
+    height: 560px;
+    margin-bottom: 20px;
+}
+.bannerdiv2{
+    height: 110px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    border-top: solid 2px rgb(65, 65, 65);
+    background-color: rgb(243, 243, 243);
+}
+.banner1{
+    width: 100%;
+    height: auto;
+    box-shadow: 0px 3px 6px black;
+}
+.banner2{
+    width: 1300px;
+}
+.banner1:hover{
+    box-shadow: 0px 6px 10px black;
+}
+.what{
+    position: fixed;
+    border-radius: 40%;
+    width: 100px;
+    height: 100px;
+    right: 20px;
+    bottom: 20px;
+}
+.card{
+    background-color: rgb(255, 252, 247);
+    width: 390px;
+    height: 600px;
+    border-radius: 15px;
+    border: solid 3px black;
+    box-shadow: 3px 3px 10px black;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.icard{
+    margin-top: 10px;
+    width: 95%;
+    height: auto;
+    border: solid 3px rgb(0, 0, 0);
+}
+.card:hover{
+    box-shadow: 6px 6px 10px black;
+}
+.btncard{
+    width: 230px;
+    height: 40px;
+    background-color: white;
+    color: rgb(108, 98, 83);
+    border-radius: 10px;
+    border: solid 4px black;
+    text-decoration: none;
+    font-size: 26px;
+    margin-top: 10px;
+    align-items: center;
+}
+.btncard:hover{
+    background-color: rgb(122, 103, 80);
+    color:white;
+}
+.copyright{
+    display: flex;
+    flex: 50%;
+    justify-content: end;
+}
+.direito{
+    border-top: solid 1px black;
+    display: flex;
+    letter-spacing: 4px;
+    font-size: 19px;
+    background-color: lightgray;
+}
+.fonte1{
+    font-size: 19px;
+    margin-top: 0%;
+    font-family: "Kanit", sans-serif;
+}
+.safe{
+    display: flex;
+    flex: 50%;
+    align-items: center;
+}
+.cadeado{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+.missao{
+    width: 70%;
+}
+.contato_container{
+    background-color: rgb(243, 243, 243);
+    border-top: solid 2px black;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contato_container2{
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+}
+.contato_container2 h4{
+    letter-spacing: 4px;
+    font-size: 22px;
+    font-family: "Kanit", sans-serif;
+    font-weight: 200px;
+}
+.simbolo{
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+}
+.redes a{
+    text-decoration: none;
+}
+.redes{
+    text-align: center;
+}
+section{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin-bottom: 30px;
+}
+li{
+    list-style: none;
+}
+*{
+    box-sizing: border-box;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex: 60%;
+}
+body{
+    margin: 0;
+}
+header{
+    padding: 30px;
+    width: 100%;
+    border-bottom: solid 4px black;
+    display: flex;
+    height: 150px;
+}
+footer{
+    border-top: solid 1px black;
+    display: flex;
+    width: 100%;
+    letter-spacing: 4px;
+    font-size: 19px;
+    background-color: lightgray;
+}
+.navlist, .dropbtn{
+    background-color:  rgb(255, 255, 255);
+    padding-right: 55px;
+    padding-left: 55px;
+    border-radius: 15px;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    border: solid 3px rgb(0, 0, 0);
+    text-decoration: none;
+    display: flex;
+    font-family: "Playwrite BE WAL", cursive;
+}
+h2, h3{
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+    font-size: 35px;
+    letter-spacing: 7px;
+}

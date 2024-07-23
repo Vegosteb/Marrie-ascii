@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+BE+WAL:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@keyframes shake{
+    0% { transform: translateX(0); }
+    10%, 90% { transform: translateX(-5px); }
+    20%, 80% { transform: translateX(5px); }
+    30%, 50%, 70% { transform: translateX(-5px); }
+    40%, 60% { transform: translateX(5px); }
+    100% { transform: translateX(0); }
+}
+.vibrar{
+    display: inline-block;
+}
+.vibrar:hover {
+    animation: shake 0.8s ease-in-out;
+}
+.navlist, .dropbtn{
+    background-color:  rgb(255, 255, 255);
+    padding-right: 55px;
+    padding-left: 55px;
+    border-radius: 15px;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    border: solid 3px rgb(0, 0, 0);
+    text-decoration: none;
+    display: flex;
+    font-family: "Playwrite BE WAL", cursive;
+}
+.what{
+    position: fixed;
+    border-radius: 40%;
+    width: 100px;
+    height: 100px;
+    right: 20px;
+    bottom: 20px;
+}
+.flex-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.logo{
+    width: 300px;
+    height: 170px;
+}
+.logo:hover{
+    width: 350px;
+    height: 190px;
+}
+.log{
+    display: flex;
+    align-items: center;
+    flex: 18%;
+}
+.navlist:hover, .dropbtn:hover{
+    color: black;
+    background-color: white;
+}
+.dropdown:hover{
+    color: black;
+}
+.dropdown:hover .navlist{
+    background-color: white;
+    color: black;
+}
+.dropdown-content{
+    position: absolute;
+    display: none;
+    background-color: rgb(234, 234, 234);
+    flex-direction: column;
+    border: solid 3px black;
+    border-bottom: none;
+    border-radius: 10px;
+}
+.dropdown:hover .dropdown-content{
+    display: flex;
+}
+.dropdown{
+    display: block;
+    position: relative;
+}
+.dropdown-content a{
+    color: black;
+    text-decoration: none;
+    display: block;
+    padding-left: 45px;
+    padding-right: 45px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-family: "Playwrite BE WAL", cursive;
+    border-bottom: solid 3px black;
+}
+.dropdown-content a:hover{
+    background-color: rgb(93, 75, 75);
+    color: white;
+}
+.dif{
+    border-bottom: solid 10px rgb(108, 98, 83);
+    border-bottom-right-radius:5px;
+    border-bottom-left-radius:5px;
+}
+.safe{
+    display: flex;
+    flex: 50%;
+    align-items: center;
+}
+.cadeado{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+.copyright{
+    display: flex;
+    flex: 50%;
+    justify-content: end;
+}
+.direito{
+    border-top: solid 1px black;
+    display: flex;
+    letter-spacing: 4px;
+    font-size: 19px;
+    background-color: lightgray;
+}
+.fonte1{
+    font-size: 19px;
+    margin-top: 0%;
+    font-family: "Kanit", sans-serif;
+}
+.what{
+    position: fixed;
+    border-radius: 40%;
+    width: 100px;
+    height: 100px;
+    right: 20px;
+    bottom: 20px;
+}
+.linha{
+    border-bottom: solid 4px black;
+    width: 1000px;
+    display: flex;
+    justify-content: center;
+}
+.linha2{
+    border-bottom: solid 2px black;
+    width: 700px;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+.entrega_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.dado_container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.submit-link{
+    padding: 0px 120px 0px 120px;
+    border-radius: 30px;
+    background-color: rgb(93, 75, 75);
+    border: solid 3px black;
+    font-size: 50px;
+    color: white;
+    font-family: "Kanit", sans-serif;
+    letter-spacing: 5px;
+    align-self: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.submit-link:hover{
+    background-color: rgb(223, 223, 223);
+    color: black;
+}
+.contato_container{
+    background-color: rgb(243, 243, 243);
+    border-top: solid 2px black;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contato_container2{
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+}
+.contato_container2 h4{
+    letter-spacing: 4px;
+    font-size: 22px;
+    font-family: "Kanit", sans-serif;
+    font-weight: 200px;
+}
+.simbolo{
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+}
+.redes a{
+    text-decoration: none;
+}
+.redes{
+    text-align: center;
+}
+footer{
+    border-top: solid 1px black;
+    display: flex;
+    width: 100%;
+    letter-spacing: 4px;
+    font-size: 19px;
+    background-color: lightgray;
+}
+label{
+    font-size: 30px;
+    font-family: "Kanit", sans-serif;
+}
+input, select{
+    width: 300px;
+    font-size: 25px;
+    align-self: center;
+}
+header{
+    padding: 30px;
+    width: 100%;
+    border-bottom: solid 4px black;
+    display: flex;
+    height: 150px;
+}
+*{
+    box-sizing: border-box;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex: 60%;
+}
+body{
+    margin: 0;
+}
+li{
+    list-style: none;
+}
+h1{
+    font-size: 55px;
+    letter-spacing: 3px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+}
+h2, h3{
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+    font-size: 40px;
+    letter-spacing: 7px;
+}

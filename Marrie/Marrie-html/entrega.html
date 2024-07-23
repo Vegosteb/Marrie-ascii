@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Marrie-css/entrega.css">
+    <title>Finalizar compra</title>
+</head>
+<body>
+    <div class="flex-container">
+        <header class="header">
+            <div class="log">
+                <a href="index.html">
+                    <img src="imgs/logocur.png" class="logo">
+                </a>
+            </div>
+            <nav>
+                <div><a href="index.html" class="navlist">Home</a></div>
+                <div>
+                    <ul>
+                        <li class="dropdown">
+                            <a href="produtos.html" class="dropbtn">Produtos</a>
+                            <div class="dropdown-content">
+                                <a href="feminino.html">Feminino</a>
+                                <a href="masculino.html">Masculino</a>
+                                <a href="infantil.html" class="dif">Infantil</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div><a href="sobre.html" class="navlist">Sobre nós</a></div>
+                <div><a href="#pe" class="navlist">Contato</a></div>
+            </nav>
+        </header>
+        <div class="entrega_container">
+            <div class="linha">
+                <h1>Dados para a compra</h1>
+            </div>
+            <form>
+                <div class="dado_container">
+                    <div class="linha2">
+                        <h2>Dados pessoais</h2>
+                    </div>
+                    <br><br>
+                    <label for="nome">Nome completo:</label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite o nome aqui" required><br>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Digite o email aqui" required><br>
+                    <label for="cpf">CPF:</label>
+                    <input type="text" id="cpf" name="cpf" pattern="[0-9]{3}\.[0-9]{3}\.[0-9]{3}-[0-9]{2}" placeholder="000.000.000-00" required><br>
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" id="telefone" name="telefone" pattern="[0-9]{10}" placeholder="0000000000" required><br>
+                    <label for="nascimento">Data de nascimento:</label>
+                    <input type="date" id="nascimento" name="nascimento" required><br>
+                </div>
+                <div class="dado_container">
+                    <div class="linha2">
+                        <h2>Endereço</h2>
+                    </div>
+                    <br><br>
+                    <label for="rua">Rua:</label>
+                    <input type="text" id="rua" name="rua" placeholder="Digite a rua aqui" required><br>
+                    <label for="número">Número:</label>
+                    <input type="text" id="número" name="num" placeholder="Digite aqui o número" required><br>
+                    <label for="complemento">Complemento (opcional):</label>
+                    <input type="text" id="complemento" name="complemento" placeholder="Digite o complemento aqui"><br>
+                    <label for="bairro">Bairro:</label>
+                    <input type="text" id="bairro" name="bairro" placeholder="Digite seu bairro aqui" required><br>
+                    <label for="cidade">Cidade:</label>
+                    <input type="text" name="cidade" id="cidade" placeholder="Digite a cidade aqui" required><br>
+                    <label for="estado">Estado:</label>
+                    <select id="estado" name="estado" required>
+                        <option value="" disabled selected>Selecione o estado</option>
+                        <option value="AC">Acre</option>
+                        <option value="AL">Alagoas</option>
+                        <option value="AP">Amapá</option>
+                        <option value="AM">Amazonas</option>
+                        <option value="BA">Bahia</option>
+                        <option value="CE">Ceará</option>
+                        <option value="DF">Distrito Federal</option>
+                        <option value="ES">Espírito Santo</option>
+                        <option value="GO">Goiás</option>
+                        <option value="MA">Maranhão</option>
+                        <option value="MT">Mato Grosso</option>
+                        <option value="MS">Mato Grosso do Sul</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="PA">Pará</option>
+                        <option value="PB">Paraíba</option>
+                        <option value="PR">Paraná</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="PI">Piauí</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="RO">Rondônia</option>
+                        <option value="RR">Roraima</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="SE">Sergipe</option>
+                        <option value="TO">Tocantins</option>
+                    </select><br>
+                </div>
+                <button class="submit-link" type="submit" onclick="window.location.href='index.html';">
+                    Finalizar compra
+                </button>
+            </form>
+        </div>
+        <div id="pe" class="contato_container">
+            <h3>Contato</h3>
+            <div class="contato_container2">
+                <div>
+                    <h4>Atendimento</h4>
+                    <p><b>Email:</b><br> faleconosco@marrie.com.br</p>
+                    <p><b>WhatsApp:</b><br>(34)9999-9999</p>
+                    <p>Das 08 às 20, de segunda a sexta.</p>
+                </div>
+                <div class="redes">
+                    <h4>Redes</h4>
+                    <a href="https://www.instagram.com/">
+                        <img class="simbolo" src="imgs/insta.jpeg">
+                    </a>
+                    <a href="https://www.facebook.com/?locale=pt_BR">
+                        <img class="simbolo" src="imgs/facebook.png">
+                    </a>
+                    <a href="https://br.linkedin.com/">
+                        <img class="simbolo" src="imgs/linkedin.png">
+                    </a>
+                    <a href="https://github.com/">
+                        <img class="simbolo" src="imgs/github.png">
+                    </a>
+                </div>
+            </div>
+            <br>
+        </div>
+        <footer>
+            <div class="safe">
+                <img  class="cadeado" src="imgs/cadeado.png">
+                <p>Ambiente Protegido</p>
+            </div>
+            <div class="copyright">
+                <p>© Marriê. Todos os direitos reservados.</p>
+            </div>
+        </footer>
+        <a href="#pe">
+            <img class="what vibrar" src="imgs/whats.pnj.png"> <!--Ícone do WhatsApp-->
+        </a>
+    </div>
+</body>
+</html>
